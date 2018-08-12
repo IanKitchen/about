@@ -2,24 +2,22 @@
 <html>
 	
 	<head>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
 		<script type="text/javascript" src="js/jquery.js"></script>	
+		<script type="text/javascript" src="js/less.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="page">
 		  <div class="title title1">Ian Kitchen</div>
-		  <div class="title title2">UX / Data Visualization</div>
-		
-		  <div class="container flexContainer">
-		    <div id="who" class="flexContent"> who  </div>
-		    <div id="what" class="flexContent"> what </div>
-		    <div id="why" class="flexContent"> why </div>
-		  </div>
-		  <!--style="flex: grow shrink basis"-->
-		  
-		
-		  <div class="container">
+		  <div class="title title2">UX Designer</div>
+		  <div class="flexContainer">
+		    <div id="a" class="flexContent flexContentMajor"> this is the major content for the row, it takes twice as much space as the other content  </div>
+		    <div class="flexContentMargin"> </div>
+		    <div id="b" class="flexContent flexContentMinor"> this is the minor content number one </div>
+		  </div>		
+		  <div>
 		    <div class="content"> hello </div>
 		    <div id="reverseNames" class="content"> reverse a list of names </div>
 		

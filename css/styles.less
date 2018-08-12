@@ -1,0 +1,91 @@
+
+//Variables
+
+@bodyBackground: #666666; //dark gray
+
+@pageWidth: 860px;
+@pageBackground: #ffee00; //yellow
+@pageHorizontalPadding: 30px;
+@pageVerticalPadding: 10px;
+
+@titleBackground: #eeeeff; //light blue
+
+@flexBackground: #ddeeff; //light blue 2
+@flexContentBackground: #aabbbb; //blue gray
+
+
+
+//Styles
+
+body{
+  background-color: @bodyBackground;
+}
+
+
+.page{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:1px;
+  padding-bottom:50px;
+  width: @pageWidth;
+  background-color: @pageBackground;
+}
+
+//Title Styles
+
+.title{
+  padding-top:@pageVerticalPadding;
+  padding-left: @pageHorizontalPadding;
+  padding-right: @pageHorizontalPadding;
+  background-color: @titleBackground;
+}
+
+.title1{
+  font: 40px arial, sans-serif;
+  margin-top:140px;
+}
+
+.title2{
+  font: 20px arial, sans-serif;
+  margin-top:20px;
+  margin-bottom:40px;
+}
+
+
+//Flex Styles
+
+.flexContainer {
+  display:flex;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: @pageHorizontalPadding;
+  padding-right: @pageHorizontalPadding;
+  background-color: @flexBackground;
+}
+
+.flexContent {
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: left;
+  background-color: @flexContentBackground;
+}
+
+.flexContentMinor{
+  flex: 1 1 auto;	
+}
+
+.flexContentMajor {
+  flex: 2 2 auto;	
+}
+
+.flexContentMargin {
+  flex: 0 0 20px;
+  background-color:@pageBackground;	
+}
+
+.content {
+  padding-left: @pageHorizontalPadding;
+  background-color: #FFFFFF;
+  padding-top:20px;
+  padding-bottom:20px;
+}
