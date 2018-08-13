@@ -1,19 +1,28 @@
 
 //Variables
 
+//Shared
+@fontFace: "Helvetica";
+
+//Colors for layout
+/*
 @bodyBackground: #666666; //dark gray
-
-@pageWidth: 860px;
-@pageBackground: #ffee00; //yellow
-@pageHorizontalPadding: 30px;
-@pageVerticalPadding: 10px;
-
 @titleBackground: #eeeeff; //light blue
-
 @flexBackground: #ddeeff; //light blue 2
 @flexContentBackground: #aabbbb; //blue gray
+@pageBackground: #ffee00; //yellow
+*/
 
+//Colors for display
+@bodyBackground: white;
+@titleBackground: white;
+@flexBackground: white;
+@flexContentBackground: white;
+@pageBackground: white;
 
+//Page
+@pageWidth: 960px;
+@standardMargin: 10px;
 
 //Styles
 
@@ -25,8 +34,6 @@ body{
 .page{
   margin-left: auto;
   margin-right: auto;
-  padding-top:1px;
-  padding-bottom:50px;
   width: @pageWidth;
   background-color: @pageBackground;
 }
@@ -34,21 +41,27 @@ body{
 //Title Styles
 
 .title{
-  padding-top:@pageVerticalPadding;
-  padding-left: @pageHorizontalPadding;
-  padding-right: @pageHorizontalPadding;
+  text-align: center;
+  margin-top: @standardMargin;
+  margin-left: @standardMargin;
+  margin-right: @standardMargin;
   background-color: @titleBackground;
 }
 
 .title1{
-  font: 40px arial, sans-serif;
-  margin-top:140px;
+  font: 40px @fontFace, sans-serif;
+  padding-top:140px;
 }
 
 .title2{
-  font: 20px arial, sans-serif;
-  margin-top:20px;
-  margin-bottom:40px;
+  font: 24px @fontFace, sans-serif;
+  margin-top:60px;
+}
+
+.title3{
+  font: 18px @fontFace, sans-serif;
+  color: #aba6a6;
+  margin-top:24px;
 }
 
 
@@ -56,36 +69,29 @@ body{
 
 .flexContainer {
   display:flex;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left: @pageHorizontalPadding;
-  padding-right: @pageHorizontalPadding;
+  margin-top:60px;
   background-color: @flexBackground;
 }
 
 .flexContent {
-  padding-top:10px;
-  padding-bottom:10px;
+  margin:10px;
+  font: 16px @fontFace, sans-serif;
   text-align: left;
   background-color: @flexContentBackground;
 }
 
 .flexContentMinor{
-  flex: 1 1 auto;	
+  flex: 1 1 auto;
 }
 
 .flexContentMajor {
-  flex: 2 2 auto;	
+  flex: 99 2 auto;	
 }
 
-.flexContentMargin {
-  flex: 0 0 20px;
-  background-color:@pageBackground;	
+.flexGrid{
+  margin:10px;
+  width:60px;
+  background-color: gray;
+
 }
 
-.content {
-  padding-left: @pageHorizontalPadding;
-  background-color: #FFFFFF;
-  padding-top:20px;
-  padding-bottom:20px;
-}
