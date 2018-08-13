@@ -7,22 +7,24 @@
 //Colors for layout
 /*
 @bodyBackground: #666666; //dark gray
+@pageBackground: #ffee00; //yellow
 @titleBackground: #eeeeff; //light blue
 @flexBackground: #ddeeff; //light blue 2
 @flexContentBackground: #aabbbb; //blue gray
-@pageBackground: #ffee00; //yellow
 */
 
 //Colors for display
-@bodyBackground: gray;
+@bodyBackground: #696969;
+@pageBackground: white;
 @titleBackground: white;
 @flexBackground: white;
 @flexContentBackground: white;
-@pageBackground: white;
+
 
 //Page
 @pageWidth: 960px;
 @standardMargin: 10px;
+@standardPadding: 20px;
 
 //Styles
 
@@ -87,6 +89,14 @@ body{
 
 .flexContentMajor {
   flex: 99 2 auto;	
+}
+
+.flexContentThird {
+  flex: 1 1 auto;
+  width: 960px;
+
+  text-align: center;	
+  background-color: @flexContentBackground;
 }
 
 .flexGrid{
