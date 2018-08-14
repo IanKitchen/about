@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	$("#myButton").click(function(){alert("click")});
-		
+	
+	//set up by hidding details sections		
 	$("#applicationDetails").hide();
-		
+	
+	//use fadeTo to change opacity of indicator, but fadeToggle to show and hide the details section	
 	$("#application").click(function(){
-		//$("#applicationSelectedIndicator").fadeTo("slow", 1);	
 		if( $("#applicationSelectedIndicator").css('opacity') == 1 )
 		{
 			$("#applicationSelectedIndicator").fadeTo("fast", 0);
@@ -15,9 +15,18 @@ $(document).ready(function(){
 		}	
 		
 		$("#applicationDetails").fadeToggle("fast");
-	})
+	});
 	
+	//illuminate labels on hover to indicate clickable elements
+	$("#application").mouseenter(function(){
+		$("#applicationHoverIndicator").css("color", "#4178BE");
+	});
 	
+	$("#application").mouseleave(function(){
+		$("#applicationHoverIndicator").css("color", "#aba6a6");
+	});
+
+
 	
 });
 
