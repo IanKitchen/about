@@ -2,6 +2,7 @@ $(document).ready(function(){
 	
 	//set up by hidding details sections		
 	$("#applicationDetails").hide();
+	//$("#layout").hide();
 	
 	//use fadeTo to change opacity of indicator, but fadeToggle to show and hide the details section	
 	$("#application").click(function(){
