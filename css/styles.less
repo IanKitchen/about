@@ -9,7 +9,7 @@
 
 
 //Colors for testing layout (comment out the colors for display block to see these)
-@selectionBackground: #4178BE;
+@selectionBackground: #4178BE;  //blue
 @bodyBackground: #666666; //dark gray
 @pageBackground: #ffee00; //yellow
 @titleBackground: #eeeeff; //light blue
@@ -46,7 +46,7 @@ body{
   background-color: @pageBackground;
 }
 
-//Title Styles
+//Text Styles
 
 .title{
   text-align: center;
@@ -106,6 +106,12 @@ body{
   background-color: @flexContentBackground;
 }
 
+.flexConnected{
+  margin-top:0px; 
+  padding-top: 20px;
+}
+
+
 .flexSelector{
   height:8px;
   margin-top:0px;
@@ -131,9 +137,20 @@ body{
 	width:60px; 
 	height: 16px;
 	margin-top:28.5px;
+	padding-left: 3px;
 	border-radius: 3px;
-	color:#4178BE; 
-	font-size: xx-small;
+	color: white;
+	//color:#4178BE; 
+	text-align: left;
+	font-size: small;
+}
+
+.barText{
+	color: #4178BE;
+	height: 26px;
+	//color:#4178BE; 
+	text-align: right;
+	font-size: small;
 }
 
 .col { width: 6.25%; margin: 01.041666666667%; float: left /* X-browser */ }
