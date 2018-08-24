@@ -132,7 +132,21 @@ var activityViewImage = "images\\activity_view.png";
 
 //Measuring 
 var measuringConnectivityTitle = "Measuring Connectivity";
-var measuringConnectivityText1 = "Text 1"
-var measuringConnectivityText2 = "Text 2";
-var measuringConnectivityText3 = "Text 3";
+var measuringConnectivityText1 = " \
+<b>The Problem</b> <br><br> \
+In many networks the nodes with the highest degree of connectivity are those the analyst will choose to analyse first. \
+For smaller networks this is easy to see visually, but we found an increasing number of use cases where larger networks with directed links were being analysed <br><br> \
+<b>Exploration</b> <br><br> \
+Working with experts we identified a number of different measures, some related purely to the number of links, other based on direction or value each link. \
+I worked with analyst to organise these options in a way that matched their mental model. ";
+var measuringConnectivityText2 = " \
+<b>Prototyping</b> <br><br> \
+Visualising the flow of values in and out of each node or between pairs of nodes called for a custom visualisation. <br><br> \
+<b>Evaluation</b> <br><br> \
+After prototyping and testing a number of options I selected one which used the position of a bar to show the relative value in and out of each node then order to show highest to lowest \ ";
+var measuringConnectivityText3 = " \
+<b>The Solution allows for quickly switching between measures. Visually encoding the measures onto the network diagram and exporting the resulting visualisations in a number of formats for use in reports and presentations.</b> <br><br> \
+ <br><br> \
+<b>Results</b> <br><br> \
+The senior subject matter expert described it as an enormous improvement. A very popular capability which has been further enhanced since first release.";
 var measuringConnectivityImage = "images\\most_connected.png";
