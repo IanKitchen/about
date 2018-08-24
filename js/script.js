@@ -145,8 +145,8 @@ Visualising the flow of values in and out of each node or between pairs of nodes
 <b>Evaluation</b> <br><br> \
 After prototyping and testing a number of options I selected one which used the position of a bar to show the relative value in and out of each node then order to show highest to lowest \ ";
 var measuringConnectivityText3 = " \
-<b>The Solution allows for quickly switching between measures. Visually encoding the measures onto the network diagram and exporting the resulting visualisations in a number of formats for use in reports and presentations.</b> <br><br> \
- <br><br> \
+<b>The Solution </b> <br><br> \
+Measures are clearly labelled and tooltips give extra details. Visually encoding the measures onto the network diagram and exporting the resulting visualisations in a number of formats for use in reports and presentations.</b> <br><br> \
 <b>Results</b> <br><br> \
 The senior subject matter expert described it as an enormous improvement. A very popular capability which has been further enhanced since first release.";
 var measuringConnectivityImage = "images\\most_connected.png";
