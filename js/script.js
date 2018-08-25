@@ -76,7 +76,7 @@ $(document).ready(function(){
 		$("#details1").html(eval(studyName + "Text1"));
 		$("#details2").html(eval(studyName + "Text2"));
 		$("#details3").html(eval(studyName + "Text3"));
-		$('#detailsImage').attr('src',eval(studyName + "Image"));
+		//$('#detailsImage').attr('src',eval(studyName + "Image"));
 	}
 
 	
