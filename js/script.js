@@ -5,16 +5,16 @@ $(document).ready(function(){
 	//$("#layout").hide();
 	
 	//show and hide the details for a case study	
-	$(".flexContent").click(function(){	
+	$(".gridGalleryItem").click(function(){	
 		showDetails($(this).attr('id'));
 	});
 	
 	//illuminate labels on hover to indicate clickable elements
-	$(".flexContent").mouseenter(function(){
+	$(".gridGalleryItem").mouseenter(function(){
 		caseHover($(this).attr('id'),true);
 	});
 	
-	$(".flexContent").mouseleave(function(){
+	$(".gridGalleryItem").mouseleave(function(){
 		caseHover($(this).attr('id'),false);
 	});
 

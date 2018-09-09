@@ -10,13 +10,21 @@
 	</head>
 	<body>
 		<div class="page">
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
 		  <div class="title title1">Ian Kitchen</div>
 		  <div class="title title3">UX Designer</div>
-		  <div class="flexContainer">
-		    <div id="a" class="flexContent col col-4">  
+		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
+		  <div class="grid">
+		    <div class="gridImage">  
 				<img src=images/profile.png style="width:300px"/>
 		    </div>
-		    <div id="b" class="flexContent bodyText col col-8"> 
+		    <div class="bodyText"> 
 				I'm a UX Designer working in the i2 group at IBM. 
 				<br><br>
 				My focus has been on the design of software to support the investigation of criminal networks through the analysis of relationships, financial transactions and communications data. 
@@ -27,16 +35,23 @@
 				I believe involving the wider product team in this process is essential to a project's success.		    
 			</div>
 		  </div>
+		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
 
 		  <div class="title title2">
 			  What can I do for you?
 		  </div>
 		  
-		  <div class="flexContainer">
-		    <div class="flexContent col col-4">  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+
+		  
+		  <div class="grid" style="grid-template-columns: 1fr 2fr">
+		    <div class="gridImage" >  
 				<img src=images/scenario.png style="width:300px"/>
 		    </div>
-		    <div class="flexContent bodyText col col-8">
+		    <div class="bodyText">
 			    Analyse user needs and pain points
 			    <br><br>
 				Lead ideation sessions to identify innovative solutions
@@ -45,147 +60,168 @@
 				<br><br>
 				Produce low-fi prototypes to test workflow against realistic scenarios
 				<br><br>
-				Craft high-fi interactive prototypes to test affordance and feedback
+				Craft hi-fi interactive prototypes to test affordance and feedback
 				<br><br>
 				Work with front end developers on the detail of a design, including visual design
 			    </ul>
 		    </div>
 		  </div>
 		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
 		  <div class="title title2">
 			  What have I done?
 		  </div>
-		  <div class="flexContainer flexGallery" >
-			  <div id="caseStudy1" class="flexContent col col-4">
+		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
+		  <div class="grid" style="grid-template-columns: 1fr; background-color: #aaaaaa; min-height: 10px"> </div>
+		  <div class="grid" style="grid-template-columns: 0px 1fr 1fr 1fr 0px; background-color: #aaaaaa">
+			  <div style="background-color: #aaaaaa; min-height: 10px"> </div>
+			  <div id="caseStudy1" class="gridGalleryItem">
 				  <img src="images/framework.png">
 				  <div id="caseStudy1HoverIndicator" class="title title3">Application Refresh<br><br></div>
-				  <div id="caseStudy1SelectedIndicator" class="flexSelector"></div>
+				  <div id="caseStudy1SelectedIndicator" class="gridSelector"></div>
 			  </div>
-			  <div id="caseStudy2" class="flexContent  col col-4">
+			  <div id="caseStudy2" class="gridGalleryItem">
 				  <img src="images/activity_view.png">
 				  <div id="caseStudy2HoverIndicator" class="title title3">Activity View<br><br></div>
-				  <div id="caseStudy2SelectedIndicator" class="flexSelector"></div>
+				  <div id="caseStudy2SelectedIndicator" class="gridSelector"></div>
 			  </div>
-			  <div id="caseStudy3" class="flexContent  col col-4">
+			  <div id="caseStudy3" class="gridGalleryItem">
 				  <img src="images/most_connected.png">
 				  <div id="caseStudy3HoverIndicator" class="title title3">Measuring Connectivity<br><br></div>
-				  <div id="caseStudy3SelectedIndicator" class="flexSelector"></div>
-			  </div>			  
+				  <div id="caseStudy3SelectedIndicator" class="gridSelector"></div>
+			  </div>		
+			  <div style="background-color: #aaaaaa; min-height: 10px"> </div>	  
+		  </div>
+		  <div class="grid" style="grid-template-columns: 1fr; background-color: #aaaaaa; min-height: 10px"> </div>
+		  
+		  <div id="caseStudyDetails" >
+			  <div class="emptyRow"> </div>
+			  <div class="emptyRow"> </div>
+			  <div id="detailsTitle" class="title title2 " > </div>
+			  <div class="emptyRow"> </div>
+			  <div class="grid" style="grid-template-columns: 1fr 1fr 1fr" >
+			  	<div id="details1" class=" bodyText"> </div>
+				<div id="details2" class=" bodyText"> </div>
+				<div id="details3" class=" bodyText"> </div>
+			  </div>
 		  </div>
 		  
-		  <div id="caseStudyDetails" style="border-top: 1px solid #4178BE; border-bottom: 8px solid #a9a9a9;">
-			 
-			  <div class="flexContainer flexConnected" >
-				  <div id="detailsTitle" class="title title2 flexContent col col-12" > </div>
-			  </div>
-			  <div class="flexContainer flexConnected" >
-			  	
-			  	<div id="details1" class="flexContent bodyText col col-4"> </div>
-				<div id="details2" class="flexContent bodyText col col-4"> </div>
-				<div id="details3" class="flexContent bodyText col col-4"> </div>
-			  </div>
-<!--
-			  <div class="flexContainer flexConnected" >
-				  <div class="flexContent col col-12" >
-					  <div class="flexContent  col col-6" >
-					  	<img id="detailsImage" src="images/notebook_analysis_tab.png">	
-				  	  </div>
-				  </div>
-			  </div>
--->
-		  </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
 
 		  
 		  <div class="title title2" style="margin-top:40px">
 			  Where and When?
 		  </div>
 		  
-		  <div class="flexContainer" style="margin-top:35px">
-			  <div class="col col-4">
-				  <div class="tableContent">Company</div>
-				  <div class="tableContent">IBM</div>
-				  <div class="tableContent">i2 Limited</div>
-				  <div class="tableContent">i2 Limited</div>
-				  <div class="tableContent">i2 Limited</div> 
-				  <div class="tableContent">Dorling Kindersley</div>
-				  <div class="tableContent">Energia Software</div>
-				  <div class="tableContent">University of Edinburgh</div>
-				  <div class="tableContent">Kellogs</div>
-				  <div class="tableContent">University of Newcastle upon Tyne</div>
-			  </div>
-			  <div class="col col-3">
-				  <div class="tableContent">Role</div>
-				  <div class="tableContent">Senior UX Designer</div>
-				  <div class="tableContent">UX Designer</div>
-				  <div class="tableContent">Developer Manager</div>
-				  <div class="tableContent">Software Developer</div>
-				  <div class="tableContent">Software Developer</div>
-				  <div class="tableContent">Founder</div>
-				  <div class="tableContent">MSc Artificial Intelligence</div>
-				  <div class="tableContent">Graduate Trainee</div>
-				  <div class="tableContent">BEng Electrical Eng.</div>
-			  </div>
-			  <div class="col col-1"> 
-				  <div class="tableContent">From</div>
-				  <div class="tableContent">2012</div>
-				  <div class="tableContent">2006</div>
-				  <div class="tableContent">2002</div>
-				  <div class="tableContent">1998</div>
-				  <div class="tableContent">1995</div>
-				  <div class="tableContent">1991</div>
-				  <div class="tableContent">1990</div>
-				  <div class="tableContent">1988</div>
-				  <div class="tableContent">1985</div>
-			  </div>
-			  <div class="col col-1" style="text-align: center"> 
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  <div class="tableContent"> – </div>
-				  				  		  
-			  </div>
-			  <div class="col col-1"> 
-				  <div class="tableContent">To</div>
-				  <div class="tableContent">present</div>
-				  <div class="tableContent">2012</div>
-				  <div class="tableContent">2006</div>
-				  <div class="tableContent">2002</div>
-				  <div class="tableContent">1998</div>
-				  <div class="tableContent">1995</div>
-				  <div class="tableContent">1991</div>
-				  <div class="tableContent">1990</div>
-				  <div class="tableContent">1988</div>
-			  </div>
-			  <div class="col col-1"> 
-				  <div class="tableContent barText" > &nbsp </div>
-			  </div>
-			  <div class="col col-1"> 
-				  <div class="tableContent">Years</div>
-				  <div class="tableContent bar" style="width:60px; color: white"> 6 </div>
-				  <div class="tableContent bar" style="width:60px"> 6</div>
-				  <div class="tableContent bar" style="width:40px"> 4</div>
-				  <div class="tableContent bar" style="width:40px"> 4</div>
-				  <div class="tableContent bar" style="width:30px"> 3</div>
-				  <div class="tableContent bar" style="width:40px"> 4</div>
-				  <div class="tableContent bar" style="width:10px"> 1</div>
-				  <div class="tableContent bar" style="width:20px"> 2</div>
-				  <div class="tableContent bar" style="width:30px"> 3</div>
-			  </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
+		  <div class="grid" style="grid-template-columns: 4fr 3fr 1fr 1fr 1fr 1fr 1fr">
+			  <div class="tableContent">Company</div>
+			  <div class="tableContent">Role</div>
+			  <div class="tableContent">From</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">To</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent">Years</div>
+			  
+			  <div class="tableContent">IBM</div>
+			  <div class="tableContent">Senior UX Designer</div>
+			  <div class="tableContent">2012</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">present</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:60px; color: white"> 6 </div>
+			  
+			  <div class="tableContent">i2 Limited</div>
+			  <div class="tableContent">UX Designer</div>
+			  <div class="tableContent">2006</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">2012</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:60px; color: white"> 6 </div>
+			  
+			  <div class="tableContent">i2 Limited</div>
+			  <div class="tableContent">Development Manager</div>
+			  <div class="tableContent">2002</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">2006</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:40px; color: white"> 4 </div>
+			  
+			  <div class="tableContent">i2 Limited</div>
+			  <div class="tableContent">Software Developer</div>
+			  <div class="tableContent">1998</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">2002</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:40px; color: white"> 4 </div>
+			  
+			  <div class="tableContent">Dorling Kindersley</div>
+			  <div class="tableContent">Software Developer</div>
+			  <div class="tableContent">1995</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">1998</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:30px; color: white"> 3 </div>
+			  
+			  <div class="tableContent">Energia Software</div>
+			  <div class="tableContent">Founder</div>
+			  <div class="tableContent">1991</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">1995</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:40px; color: white"> 4 </div>
+			  
+			  <div class="tableContent">University of Edinburgh</div>
+			  <div class="tableContent">MSc Artificial Intelligence</div>
+			  <div class="tableContent">1990</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">1991</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:10px; color: white"> 1 </div>
+			  
+			  <div class="tableContent">Kellogs</div>
+			  <div class="tableContent">Graduate Trainee</div>
+			  <div class="tableContent">1998</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">1990</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:20px; color: white"> 2 </div>
+			  
+			  <div class="tableContent">University of Newcastle upon Tyne</div>
+			  <div class="tableContent">BEng Electrical Eng.</div>
+			  <div class="tableContent">1985</div>
+			  <div class="tableContent"> – </div>
+			  <div class="tableContent">1988</div>
+			  <div class="tableContent barText" > &nbsp </div>
+			  <div class="tableContent bar" style="width:30px; color: white"> 3 </div>
 		  </div>
+		  		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
 		  
 		  <div class="title title2">
 			  How and Why?
 		  </div>
 		  
-		  <div class="flexContainer">
-			  <div class="flexContent bodyText col col-6"> 
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
+		  <div class="grid" style="grid-template-columns: 1fr 1fr">
+			  <div class="bodyText" style="text-align: center"> 
 				  <b>How</b>
+			  </div>
+			  <div class="bodyText" style="text-align: center"> 
+				  <b>Why</b>
+			  </div>
+			  <div class="bodyText">
 				  <br><br>
 				  Creating systems for making sense of the multitude of data available to an analyst demands a deep understanding of the problem space. 
 				  I'm trained in applying IBM Design Thinking to meet this challenge by observing, reflecting and making.
@@ -195,53 +231,44 @@
 				  I have extensive experience in Data Visualisation, Prototyping, User Centred Design, Design Thinking, Interaction Design. I'm also the holder of a number of patents.
 
 			  </div>
-			  <div class="flexContent bodyText col col-6"> 
-				  <b>Why</b>
+			  <div class="bodyText"> 
 				  <br><br>
 				  The short answer; because I hate badly designed things. 
 				  <br><br> 
 				  The slightly longer answer — I enjoy the process of really getting to grips with a problem and exploring different ways of finding a solution.
 				  When users are delighted by a solution I've designed then I'm delighted too. 
 				  After all work is tough and designers are lucky to have some great software tools to work with, I think everyone else deserves equally great tools and systems. 
- 
 			  </div>
 		  </div>
+		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
 		  
 		  <div class="title title2">
 			  Want to Get in Touch?
 		  </div>
-		  <div class="flexContainer" style="justify-content:"space-evenly"">
-			  <div class="col col-4 title title3">
+		  
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  
+		  <div class="grid" style="grid-template-columns: 1fr 1fr 1fr"">
+			  <div class="title title3">
 			   ian@oceanrain.com
 			  </div>
-			  <div class="col col-4  title title3">
+			  <div class="title title3">
 			   linkedin.com/in/ian/ian-kitchen-05399316
 			  </div>
-			  <div class="col col-4 title title3">
+			  <div class="title title3">
 			   ForceDirected on Twitter
 			  </div>
 		  </div>
 		  
-		  <div id="layout" class="flexContainer">
-		  	<div class="flexGrid">1</div>
-		    <div class="flexGrid">2</div>
-		    <div class="flexGrid">3</div>
-		    <div class="flexGrid">4</div>
-		    <div class="flexGrid">5</div>
-		    <div class="flexGrid">6</div>
-		    <div class="flexGrid">7</div>
-		    <div class="flexGrid">8</div>
-		    <div class="flexGrid">9</div>
-		    <div class="flexGrid">0</div>
-		    <div class="flexGrid">1</div>
-		    <div class="flexGrid">2</div>		
-		  </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+		  <div class="emptyRow"> </div>
+			  
 		</div>
 		
-		<!--
-		
-		
-		
-		-->
 	</body>
 </html>

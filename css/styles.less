@@ -7,6 +7,7 @@
 @textColor2: #4178BE;
 @textColor3: #aba6a6;
 @textColor4: black;
+@textColor5: #292929;
 
 
 //Colors for testing layout (comment out the colors for display block to see these)
@@ -47,6 +48,28 @@ body{
   background-color: @pageBackground;
 }
 
+.emptyRow{
+  min-height: 40px;
+}
+
+.grid{
+	display: grid; 
+	grid-template-columns: 1fr 2fr; 
+	grid-column-gap:10px; 
+	margin-left: 10px; 
+	margin-right: 10px
+}
+
+.gridImage{
+	background-color: white;
+}
+
+.gridGalleryItem{
+	background-color: white;
+	align-self: center;
+	//padding:10px
+}
+
 //Text Styles
 
 .title{
@@ -60,13 +83,11 @@ body{
 .title1{
   font: 40px @fontFace, sans-serif;
   color:@textColor1;
-  padding-top:140px;
 }
 
 .title2{
   font: 24px @fontFace, sans-serif;
   color:@textColor2;
-  padding-top:40px;
 }
 
 .title3{
@@ -80,12 +101,13 @@ body{
   font-weight: 100;
   color:@textColor4;
   text-align: start;
+  line-height: 24px;
 }
 
 .tableContent{
   font: 18px @fontFace, sans-serif;
   font-weight: 100;
-  color: @textColor3;
+  color: @textColor5;
   margin-top:24px;
 }
 
@@ -113,12 +135,8 @@ body{
 }
 
 
-.flexSelector{
-  height:8px;
-  margin-top:0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+.gridSelector{
+  min-height:8px;
   background-color: @selectionBackground;
   opacity: 0;
 }
