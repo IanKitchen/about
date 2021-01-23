@@ -3,32 +3,24 @@
 
 //Text
 @fontFace: "Helvetica";
-@textColor1: white; //Text on Dark
-@textColor2: #003333; //Section
-@textColor3: #f0f0f0; //Sub title on Dark
-@textColor4: #3f3f3f; //Body text
-@textColor5: #292929;
+
+@textLight1: #ffffff;
+@textLight2: #f0f0f0; 
+
+@textDark1: #003333;
+@textDark2: #292929;
 
 
-//Colors for testing layout (comment out the colors for display block to see these)
-@headerBackground: #003333; 
-@selectionBackground: #4178BE;  //blue
-@bodyBackground: #696969; //dark gray
-@pageBackground: #ffee00; //yellow
-@titleBackground: #003333; //light blue
-@flexBackground: #ddeeff; //light blue 2
-@flexContentBackground: #aabbbb; //blue gray
-@flexGalleryBackground: #a9a9a9; //mid gray
-
-//Colors for display
-@selectionBackground: #4178BE;
-@bodyBackground: #e9e9e9;
+//Page Backgrounds
 @pageBackground: white;
-@titleBackgroundDark: #003333; //greenblue
-@titleBackgroundLight: white;
-@flexBackground: white;
-@flexContentBackground: white;
-@flexGalleryBackground: #a9a9a9; //mid gray
+@bodyBackground: #e9e9e9;
+
+//Section Backgrounds
+@backgroundMedium: #88888f; 
+@backgroundDark: #88888f;
+@backgroundLight1: white;
+@backgroundLight2: #F3F9FE;
+@selectionBackground: #4178BE;
 
 //Sizes
 @pageWidth: 960px;
@@ -36,8 +28,7 @@
 @standardPadding: 20px;
 
 
-//Styles
-
+//Main
 body{
   background-color: @bodyBackground;
 }
@@ -49,16 +40,22 @@ body{
   background-color: @pageBackground;
 }
 
+//Backgrounds
 .emptyRowDark{
   min-height: 40px;
   margin-top: -1px;
   margin-bottom: -1px;
-  background-color: @headerBackground;
+  background-color: @backgroundMedium;
 }
 
 .emptyRowLight{
   min-height: 40px;
-  background-color: white;
+  background-color: @backgroundLight1;
+}
+
+.emptyRowShaded{
+  min-height: 40px;
+  background-color: @backgroundLight2;
 }
 
 .hairline{
@@ -70,18 +67,17 @@ body{
 	display: grid; 
 	grid-template-columns: 1fr 2fr; 
 	grid-column-gap:20px; 
-	margin-left: 20px; 
-	margin-right: 20px
+	padding-left: 20px; 
+	padding-right: 20px
 }
 
 .gridImage{
-	background-color: white;
+	background-color: @backgroundLight1;
 }
 
 .gridGalleryItem{
-	background-color: white;
+	background-color: @backgroundLight1;
 	align-self: center;
-	//padding:10px
 }
 
 //Text Styles
@@ -89,42 +85,40 @@ body{
 .title{
   text-align: center;
   margin-top: 0px;
-  //margin-left: @standardMargin;
-  //margin-right: @standardMargin;
 }
 
 .title1{
   font: 40px @fontFace, sans-serif;
-  color:@textColor1;
-  background-color: @titleBackground;
+  color:@textLight1;
+  background-color: @backgroundMedium;
   margin-top: -1px;
   margin-bottom: -1px;
 }
 
 .title2{
   font: 24px @fontFace, sans-serif;
-  color:@textColor2;
-  background-color: @titleBackgroundLight;
+  color:@textDark1;
+  background-color: @backgroundLight1;
 }
 
 .title3{
   font: 18px @fontFace, sans-serif;
-  color: @textColor3;
+  color: @textLight2;
   padding-top:10px;
-  background-color: @titleBackground;
+  background-color: @backgroundMedium;
 }
 
 .titleCaseStudy{
   font: 18px @fontFace, sans-serif;
   padding-top:20px;
-  color: @textColor2;
-  background-color: @titleBackgroundLight;
+  color: @textDark1;
+  background-color: @backgroundLight1;
 }
 
 .bodyText{
   font: 16px @fontFace, sans-serif;
   font-weight: 10;
-  color:@textColor4;
+  color:@textDark2;
   text-align: start;
   line-height: 24px;
 }
@@ -132,67 +126,28 @@ body{
 .linkText{
   font: 16px @fontFace, sans-serif;
   font-weight: 10;
-  color:@textColor2;
+  color:@textDark1;
   text-align: center;
   line-height: 24px;
 }
 
+//Table for timeline
+
 .tableContent{
   font: 16px @fontFace, sans-serif;
   font-weight: 40;
-  color: @textColor5;
+  color: @textDark2;
   margin-top:24px;
 }
 
-//Flex Styles
-
-.flexContainer {
-  display:flex;
-  margin-top:60px;
-  justify-content:"space-evenly";
-  background-color: @flexBackground;
-}
-
-.flexGallery{
-  background-color: @flexGalleryBackground;
-}
-
-.flexContent {
-  margin:10px;
-  background-color: @flexContentBackground;
-}
-
-.flexConnected{
-  margin-top:0px; 
-  padding-top: 20px;
-}
-
-
-.gridSelector{
-  min-height:8px;
-  background-color: @selectionBackground;
-  opacity: 0;
-}
-
-.flexGrid{
-  margin:10px;
-  width:60px;
-  height:1px;
-  font-size: xx-small;
-  color: white;
-  background-color: #dddddd;
-
-}
-
 .bar{
-	background-color: #4178BE; 
+	background-color: @selectionBackground; 
 	width:60px; 
 	height: 16px;
 	margin-top:28.5px;
 	padding-left: 3px;
 	border-radius: 3px;
 	color: white;
-	//color:#4178BE; 
 	text-align: left;
 	font-size: small;
 }
@@ -205,16 +160,7 @@ body{
 	font-size: small;
 }
 
-.col { width: 6.25%; margin: 01.041666666667%; float: left /* X-browser */ }
-.col-1 { width: 6.25%; }
-.col-2 { width: 14.583333333333%; }
-.col-3 { width: 22.916666666667%; }
-.col-4 { width: 31.25%; }
-.col-5 { width: 39.583333333333%; }
-.col-6 { width: 47.916666666667%; }
-.col-7 { width: 56.25%; }
-.col-8 { width: 64.583333333333%; }
-.col-9 { width: 72.916666666667%; }
-.col-10 { width: 81.25%; }
-.col-11 { width: 89.583333333333%; }
-.col-12 { width: 97.916666666667%; }
+
+.alternate{
+  background-color: @backgroundLight2;
+}
