@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function (){
 	
 	//set up by hidding details sections		
 	$("#caseStudyDetails").hide();
