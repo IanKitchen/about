@@ -1,49 +1,28 @@
-$(document).ready(function (){
-	
-	//set up by hidding details sections		
-	$("#caseStudyDetails").hide();
-	//$("#layout").hide();
-	
-	//show and hide the details for a case study	
-	$(".gridGalleryItem").click(function(){	
-		showDetails($(this).attr('id'));
-	});
-	
-	//illuminate labels on hover to indicate clickable elements
-	$(".gridGalleryItem").mouseenter(function(){
-		caseHover($(this).attr('id'),true);
-	});
-	
-	$(".gridGalleryItem").mouseleave(function(){
-		caseHover($(this).attr('id'),false);
-	});
+/*global $*/
+/*global document*/
 
-	//handle case study hover effect
-	function caseHover(selectorName, enter){
-		var caseLabel = "#" + selectorName + "HoverIndicator";
-		
-		if(enter)
-		{
-			$(caseLabel).css("color", "#4178BE");
-		}
-		else
-		{
-			$(caseLabel).css("color", "#aba6a6");
-		}
+$(document).ready(function () {
+	
+    //'use strict';
+    
+	function updateDetails(studyName) {
+		$("#detailsTitle").html(eval(studyName + "Title"));
+		$("#details1").html(eval(studyName + "Text1"));
+		$("#details2").html(eval(studyName + "Text2"));
+		$("#details3").html(eval(studyName + "Text3"));
+		//$('#detailsImage').attr('src',eval(studyName + "Image"));
 	}
-
+    
 	//handle click on a case study use fadeTo to change opacity of indicator, but fadeToggle to show and hide the details section
-	function showDetails(selectorName){
+	function showDetails(selectorName) {
 		var indicatorName = "#" + selectorName + "SelectedIndicator";
 			
-		if( $(indicatorName).css('opacity') == 0 )
-		{
+		if ($(indicatorName).css('opacity') == 0) {
 			$(indicatorName).fadeTo("fast", 1);
 			
-			if( selectorName === "caseStudy1")
-			{
-				$("#caseStudy2SelectedIndicator").fadeTo("fast",0);
-				$("#caseStudy3SelectedIndicator").fadeTo("fast",0);
+			if (selectorName === "caseStudy1") {
+				$("#caseStudy2SelectedIndicator").fadeTo("fast", 0);
+				$("#caseStudy3SelectedIndicator").fadeTo("fast", 0);
 				updateDetails("applicationRefresh");
 			}
 
@@ -69,17 +48,38 @@ $(document).ready(function (){
 			
 			$("#caseStudyDetails").fadeOut("fast");
 		}
-	};
-	
-	function updateDetails(studyName){
-		$("#detailsTitle").html(eval(studyName + "Title"));
-		$("#details1").html(eval(studyName + "Text1"));
-		$("#details2").html(eval(studyName + "Text2"));
-		$("#details3").html(eval(studyName + "Text3"));
-		//$('#detailsImage').attr('src',eval(studyName + "Image"));
 	}
-
 	
+
+
+	//set up by hidding details sections		
+	$("#caseStudyDetails").hide();
+	//$("#layout").hide();
+	
+	//show and hide the details for a case study	
+	$(".gridGalleryItem").click(function () {
+		showDetails($(this).attr('id'));
+	});
+	
+	//illuminate labels on hover to indicate clickable elements
+	$(".gridGalleryItem").mouseenter(function () {
+		caseHover($(this).attr('id'),true);
+	});
+	
+	$(".gridGalleryItem").mouseleave(function () {
+		caseHover($(this).attr('id'),false);
+	});
+    
+	//handle case study hover effect
+	function caseHover(selectorName, enter) {
+		var caseLabel = "#" + selectorName + "HoverIndicator";
+		
+		if (enter) {
+			$(caseLabel).css("color", "#4178BE");
+		} else {
+			$(caseLabel).css("color", "#aba6a6");
+		}
+	}
 });
 
 
