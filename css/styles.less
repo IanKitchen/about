@@ -4,18 +4,17 @@
 //Text
 @fontFace: "Helvetica";
 
+//Text Colors
 @textLight1: #ffffff;
 @textLight2: #f0f0f0; 
-
 @textDark1: #003333;
 @textDark2: #292929;
 
-
-//Page Backgrounds
+//Page Colors
 @pageBackground: white;
 @bodyBackground: #e9e9e9;
 
-//Section Backgrounds
+//Background Colours
 @backgroundMedium: #88888f; 
 @backgroundDark: #88888f;
 @backgroundLight1: white;
@@ -24,6 +23,7 @@
 
 //Sizes
 @pageWidth: 960px;
+@rowHeight: 40px;
 @standardMargin: 10px;
 @standardPadding: 20px;
 
@@ -31,6 +31,7 @@
 //Main
 body{
   background-color: @bodyBackground;
+  font-size:0;
 }
 
 .page{
@@ -42,19 +43,18 @@ body{
 
 //Backgrounds
 .emptyRowDark{
-  min-height: 40px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  background-color: @backgroundMedium;
+  min-height: @rowHeight;
+  background-color: @backgroundDark;
+  border: 1px solid @backgroundDark;
 }
 
-.emptyRowLight{
-  min-height: 40px;
+.emptyRowLight1{
+  min-height: @rowHeight;
   background-color: @backgroundLight1;
 }
 
-.emptyRowShaded{
-  min-height: 40px;
+.emptyRowLight2{
+  min-height: @rowHeight;
   background-color: @backgroundLight2;
 }
 
@@ -63,6 +63,7 @@ body{
 	background-color: @bodyBackground;
 }
 
+//Grids
 .gridTight{
 	display: grid; 
 	grid-template-columns: 1fr 2fr; 
@@ -94,88 +95,63 @@ body{
     background-color: @selectionBackground;
 }
 
-//Text Styles
-
-.title{
-  text-align: center;
-  margin-top: 0px;
-}
-
-.title1{
-  font: 40px @fontFace, sans-serif;
+//Text Style Colors
+.dark{
   color:@textLight1;
   background-color: @backgroundMedium;
-  margin-top: -1px;
-  margin-bottom: -1px;
+  border: 1px solid @backgroundDark;
+}
+
+.light1{
+  color:@textDark2;
+  background-color: @backgroundLight1;
+}
+
+.light2{
+  color:@textDark2;
+  background-color: @backgroundLight2;
+}
+
+//Text Styles
+.title1{
+  font: 40px @fontFace, sans-serif;
+  text-align: center;
 }
 
 .title2{
-  font: 24px @fontFace, sans-serif;
-  color:@textDark1;
-  background-color: @backgroundLight1;
-}
-
-.title3{
   font: 18px @fontFace, sans-serif;
-  color: @textLight2;
+  text-align: center;
   padding-top:10px;
-  background-color: @backgroundMedium;
 }
 
-.titleCaseStudy{
-  font: 18px @fontFace, sans-serif;
-  padding-top:20px;
-  color: @textDark1;
-  background-color: @backgroundLight1;
+.sectionHeader{
+  font: 24px @fontFace, sans-serif;
+  text-align: center;
 }
 
 .bodyText{
   font: 16px @fontFace, sans-serif;
   font-weight: 10;
-  color:@textDark2;
   text-align: start;
   line-height: 24px;
 }
 
-.linkText{
-  font: 16px @fontFace, sans-serif;
-  font-weight: 10;
-  color:@textDark1;
-  text-align: center;
-  line-height: 24px;
-}
-
-//Table for timeline
-
 .tableContent{
   font: 16px @fontFace, sans-serif;
   font-weight: 40;
-  color: @textDark2;
-  margin-top:24px;
+  line-height: 56px;
 }
 
 .bar{
-	background-color: @selectionBackground; 
-	width:60px; 
-	height: 24px;
-	margin-top:16px;
-	padding-left: 6px;
-    padding-top: 4px;
-	border-radius: 3px;
-	color: white;
-	text-align: left;
-	font-size: small;
-}
-
-.barText{
-	color: #4178BE;
-	height: 26px;
-	//color:#4178BE; 
-	text-align: right;
-	font-size: small;
+  background-color: @selectionBackground; 
+  width:60px; 
+  height: 24px;
+  margin-top:16px;
+  border-radius: 3px;
+  color: white;
+  text-align: left;
+  line-height: 26px;
+  padding-left: 3px;
 }
 
 
-.alternate{
-  background-color: @backgroundLight2;
-}
