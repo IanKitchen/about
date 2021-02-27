@@ -77,7 +77,7 @@ $(document).ready(function () {
 		if (enter) {
 			$(caseLabel).css("color", "#4178BE");
 		} else {
-			$(caseLabel).css("color", "#aba6a6");
+			$(caseLabel).css("color", "#003030");
 		}
 	}
 });

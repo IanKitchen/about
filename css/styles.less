@@ -7,16 +7,15 @@
 //Text Colors
 @textLight1: #ffffff;
 @textLight2: #f0f0f0; 
-@textDark1: #003333;
-@textDark2: #292929;
+@textDark1: #003030;
+@textDark2: #303030;
 
 //Page Colors
 @pageBackground: white;
 @bodyBackground: #e9e9e9;
 
 //Background Colours
-@backgroundMedium: #88888f; 
-@backgroundDark: #88888f;
+@backgroundDark: #808088;
 @backgroundLight1: white;
 @backgroundLight2: #F3F9FE;
 @selectionBackground: #4178BE;
@@ -31,7 +30,6 @@
 //Main
 body{
   background-color: @bodyBackground;
-  font-size:0;
 }
 
 .page{
@@ -41,7 +39,7 @@ body{
   background-color: @pageBackground;
 }
 
-//Backgrounds
+//Spacing Rows
 .emptyRowDark{
   min-height: @rowHeight;
   background-color: @backgroundDark;
@@ -51,6 +49,7 @@ body{
 .emptyRowLight1{
   min-height: @rowHeight;
   background-color: @backgroundLight1;
+  border: 1px solid @backgroundLight1;
 }
 
 .emptyRowLight2{
@@ -64,29 +63,20 @@ body{
 }
 
 //Grids
-.gridTight{
-	display: grid; 
-	grid-template-columns: 1fr 2fr; 
-	grid-column-gap: 0px; 
-	padding-left: 0px; 
-	padding-right: 0px
-}
-
 .grid{
 	display: grid; 
-	grid-template-columns: 1fr 2fr; 
+	grid-template-columns: 1fr 1fr; 
 	grid-column-gap: 20px; 
 	padding-left: 20px; 
 	padding-right: 20px
 }
 
-.gridImage{
-	background-color: @backgroundLight1;
-}
-
-.gridGalleryItem{
-	background-color: @backgroundLight1;
-	align-self: center;
+.gridTight{
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-column-gap: 00px; 
+	padding-left: 0px; 
+	padding-right: 0px
 }
 
 .gridSelector{
@@ -98,7 +88,7 @@ body{
 //Text Style Colors
 .dark{
   color:@textLight1;
-  background-color: @backgroundMedium;
+  background-color: @backgroundDark;
   border: 1px solid @backgroundDark;
 }
 
@@ -112,7 +102,7 @@ body{
   background-color: @backgroundLight2;
 }
 
-//Text Styles
+//Text Style Fonts and Sizes
 .title1{
   font: 40px @fontFace, sans-serif;
   text-align: center;
